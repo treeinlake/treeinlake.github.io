@@ -206,6 +206,302 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/17/python3编码/" itemprop="url">
+                  python3编码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-17T18:41:38+08:00" content="2016-03-17">
+              2016-03-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>decode的作用是将其他编码的字符串转换成unicode编码，如str1.decode(‘gb2312’)，表示将gb2312编码的字符串str1转换成unicode编码。</li>
+<li>encode的作用是将unicode编码转换成其他编码的字符串，如str2.encode(‘gb2312’)，表示将unicode编码的字符串str2转换成gb2312编码。</li>
+<li>有时python3会报错：AttributeError: ‘str’ object has no attribute ‘decode’</li>
+<li>因为python3里str默认为 unicode 了吧。只能编码 encode 不能解码 decode。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/17/python_note/" itemprop="url">
+                  迭代器与生成器
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-17T15:35:03+08:00" content="2016-03-17">
+              2016-03-17
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><ul>
+<li>迭代器接口： next()方法，调用该方法遍历所有值后，迭代器将引发异常StopIteration，让python停止遍历。</li>
+<li>创建自定义迭代器时，需要实现方法__iter__和next()<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">my_list = [1, 2, 3]</span><br><span class="line">foo = iter(my_list) #foo为迭代器对象</span><br><span class="line">foo.next()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><ul>
+<li>同样使用next()方法</li>
+<li>使用yield而不是return<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def counter(value):</span><br><span class="line">    print(&quot;Starting at&quot;, value)</span><br><span class="line">    while value &gt; 0:</span><br><span class="line">        yield value</span><br><span class="line">        value -= 1</span><br><span class="line">foo = counter(4) #foo为生成器对象</span><br><span class="line">for x in foo:</span><br><span class="line">    print x</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="生成器表达式"><a href="#生成器表达式" class="headerlink" title="生成器表达式"></a>生成器表达式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">foo = [x**2 for x in range(1000000)]</span><br><span class="line">bar = (x**2 for x in range(1000000))</span><br></pre></td></tr></table></figure>
+<ul>
+<li>它们将立刻返回，因为它们根本没有创建任何结果——仅当试图遍历时，才会创建结果。</li>
+</ul>
+<h1 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h1><h3 id="map和filter"><a href="#map和filter" class="headerlink" title="map和filter"></a>map和filter</h3><ul>
+<li>map接收一个函数和一个可迭代对象（如列表或生成器），并返回一个列表，其中包含对可迭代对象的每个元素执行函数得到的结果。</li>
+<li>filter也接受一个函数和可迭代对象，但只返回对可迭代对象执行函数后结果为true的元素。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/16/head_first_MySQL_1_easy/" itemprop="url">
+                  Head First MySQL
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-16T19:54:38+08:00" content="2016-03-16">
+              2016-03-16
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="创建MySQL环境"><a href="#创建MySQL环境" class="headerlink" title="创建MySQL环境"></a>创建MySQL环境</h2><ul>
+<li>利用MySQL终端访问</li>
+<li>使用phpMyAdmin访问</li>
+</ul>
+<h2 id="创建数据库和表"><a href="#创建数据库和表" class="headerlink" title="创建数据库和表"></a>创建数据库和表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ CREATE DATABASE aliendatabase;</span><br><span class="line">$ USE aliendatabase;</span><br><span class="line">$ CREATE TABLE aliens_abduction (</span><br><span class="line">  name varchar(30),</span><br><span class="line">  how varchar(100)</span><br><span class="line">  );</span><br></pre></td></tr></table></figure>
+<p>##向表中插入数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ INSERT INTO aliens_abduction (name, how)</span><br><span class="line">  VALUES (&apos;john&apos;, &apos;i do know&apos;)			 #注意键值对应关系</span><br></pre></td></tr></table></figure></p>
+<p>##从表中获取数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT name FROM aliens_abduction		#获取指定列的数据</span><br><span class="line">$ SELECT * FROM aliens_abduction		   #全部获取</span><br></pre></td></tr></table></figure></p>
+<p>##筛选数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT * FROM  aliens_abduction WHERE name = &apos;john&apos; #筛选出名字为john的数据</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/15/2016_3_15/" itemprop="url">
                   今日书评 恋爱课-陈雪
                 </a>
@@ -622,7 +918,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -681,7 +977,7 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">

@@ -57,51 +57,37 @@
 
 
 
-<meta name="description" content="简评
-生活化
+<meta name="description" content="迭代器
+迭代器接口： next()方法，调用该方法遍历所有值后，迭代器将引发异常StopIteration，让python停止遍历。
+创建自定义迭代器时，需要实现方法__iter__和next()123my_list = [1, 2, 3]foo = iter(my_list) #foo为迭代器对象foo.next()
 
-从 自我    理解    陪伴    坦诚    知己 等等一个又一个关键词展开叙述自己对爱情的经验与看法
 
-略微无病呻吟，对恋爱中的种种问题做了较为细致的阐述和观念上的疏解
-
-适合恋爱经验比较丰富，感情比较复杂的略矫情的文艺女青年打发时间，或许会有共鸣
-
-个人肯定的态度是：
-1. 爱情是创造出来的，是阐释出来的，爱是一种需要学习的能力。
-2. 爱情关系中没有所谓的必然，实践检验">
+生成器
+同样使用next()方法
+使用yield而不是return1234">
 <meta property="og:type" content="article">
-<meta property="og:title" content="今日书评 恋爱课-陈雪">
-<meta property="og:url" content="https://duckrabbit42.github.io/2016/03/15/2016_3_15/index.html">
+<meta property="og:title" content="迭代器与生成器">
+<meta property="og:url" content="https://duckrabbit42.github.io/2016/03/17/python_note/index.html">
 <meta property="og:site_name" content="天空的飞鱼">
-<meta property="og:description" content="简评
-生活化
+<meta property="og:description" content="迭代器
+迭代器接口： next()方法，调用该方法遍历所有值后，迭代器将引发异常StopIteration，让python停止遍历。
+创建自定义迭代器时，需要实现方法__iter__和next()123my_list = [1, 2, 3]foo = iter(my_list) #foo为迭代器对象foo.next()
 
-从 自我    理解    陪伴    坦诚    知己 等等一个又一个关键词展开叙述自己对爱情的经验与看法
 
-略微无病呻吟，对恋爱中的种种问题做了较为细致的阐述和观念上的疏解
-
-适合恋爱经验比较丰富，感情比较复杂的略矫情的文艺女青年打发时间，或许会有共鸣
-
-个人肯定的态度是：
-1. 爱情是创造出来的，是阐释出来的，爱是一种需要学习的能力。
-2. 爱情关系中没有所谓的必然，实践检验">
-<meta property="og:image" content="https://img3.doubanio.com/lpic/s28108486.jpg">
-<meta property="og:updated_time" content="2016-03-15T15:18:05.104Z">
+生成器
+同样使用next()方法
+使用yield而不是return1234">
+<meta property="og:updated_time" content="2016-03-17T15:14:43.545Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="今日书评 恋爱课-陈雪">
-<meta name="twitter:description" content="简评
-生活化
+<meta name="twitter:title" content="迭代器与生成器">
+<meta name="twitter:description" content="迭代器
+迭代器接口： next()方法，调用该方法遍历所有值后，迭代器将引发异常StopIteration，让python停止遍历。
+创建自定义迭代器时，需要实现方法__iter__和next()123my_list = [1, 2, 3]foo = iter(my_list) #foo为迭代器对象foo.next()
 
-从 自我    理解    陪伴    坦诚    知己 等等一个又一个关键词展开叙述自己对爱情的经验与看法
 
-略微无病呻吟，对恋爱中的种种问题做了较为细致的阐述和观念上的疏解
-
-适合恋爱经验比较丰富，感情比较复杂的略矫情的文艺女青年打发时间，或许会有共鸣
-
-个人肯定的态度是：
-1. 爱情是创造出来的，是阐释出来的，爱是一种需要学习的能力。
-2. 爱情关系中没有所谓的必然，实践检验">
-<meta name="twitter:image" content="https://img3.doubanio.com/lpic/s28108486.jpg">
+生成器
+同样使用next()方法
+使用yield而不是return1234">
 
 
 
@@ -119,7 +105,7 @@
   };
 </script>
 
-  <title> 今日书评 恋爱课-陈雪 | 天空的飞鱼 </title>
+  <title> 迭代器与生成器 | 天空的飞鱼 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -239,7 +225,7 @@
             
             
               
-                今日书评 恋爱课-陈雪
+                迭代器与生成器
               
             
           </h1>
@@ -251,8 +237,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T23:08:47+08:00" content="2016-03-15">
-              2016-03-15
+            <time itemprop="dateCreated" datetime="2016-03-17T15:35:03+08:00" content="2016-03-17">
+              2016-03-17
             </time>
           </span>
 
@@ -278,22 +264,23 @@
       
 
       
-        <h3 id="简评"><a href="#简评" class="headerlink" title="简评"></a>简评</h3><ul>
-<li><p>生活化</p>
+        <h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><ul>
+<li>迭代器接口： next()方法，调用该方法遍历所有值后，迭代器将引发异常StopIteration，让python停止遍历。</li>
+<li>创建自定义迭代器时，需要实现方法__iter__和next()<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">my_list = [1, 2, 3]</span><br><span class="line">foo = iter(my_list) #foo为迭代器对象</span><br><span class="line">foo.next()</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>从 <em>自我</em>    <em>理解</em>    <em>陪伴</em>    <em>坦诚</em>    <em>知己</em> 等等一个又一个关键词展开叙述自己对爱情的经验与看法</p>
+</ul>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><ul>
+<li>同样使用next()方法</li>
+<li>使用yield而不是return<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def counter(value):</span><br><span class="line">    print(&quot;Starting at&quot;, value)</span><br><span class="line">    while value &gt; 0:</span><br><span class="line">        yield value</span><br><span class="line">        value -= 1</span><br><span class="line">foo = counter(4) #foo为生成器对象</span><br><span class="line">for x in foo:</span><br><span class="line">    print x</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>略微无病呻吟，对恋爱中的种种问题做了较为细致的阐述和观念上的疏解</p>
-</li>
-<li><p>适合恋爱经验比较丰富，感情比较复杂的略矫情的文艺女青年打发时间，或许会有共鸣</p>
-</li>
-<li><p>个人肯定的态度是：</p>
-<pre><code>1. 爱情是创造出来的，是阐释出来的，爱是一种需要学习的能力。
-2. 爱情关系中没有所谓的必然，实践检验认知。
-3. 在爱情中保持独立、自我，爱情是与他人的联结，学会互相成就。
-4. 倘若最终能在爱情之外充实自己的生命，看见世界的辽阔，便是在这爱情的课程中学到了些真东西。
-</code></pre><p>  <img src="https://img3.doubanio.com/lpic/s28108486.jpg" alt=""></p>
-<center><br>&gt; 不算文学作品，恋爱说明书。祝你渡过苦海，终于懂得。—— <a href="https://www.douban.com/people/1748225/" target="_blank" rel="external">一度的微苏 </a>（<a href="https://book.douban.com/subject/26385621/" target="_blank" rel="external">豆瓣书评</a>）<br></center></li>
+</ul>
+<h3 id="生成器表达式"><a href="#生成器表达式" class="headerlink" title="生成器表达式"></a>生成器表达式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">foo = [x**2 for x in range(1000000)]</span><br><span class="line">bar = (x**2 for x in range(1000000))</span><br></pre></td></tr></table></figure>
+<ul>
+<li>它们将立刻返回，因为它们根本没有创建任何结果——仅当试图遍历时，才会创建结果。</li>
+</ul>
+<h1 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h1><h3 id="map和filter"><a href="#map和filter" class="headerlink" title="map和filter"></a>map和filter</h3><ul>
+<li>map接收一个函数和一个可迭代对象（如列表或生成器），并返回一个列表，其中包含对可迭代对象的每个元素执行函数得到的结果。</li>
+<li>filter也接受一个函数和可迭代对象，但只返回对可迭代对象执行函数后结果为true的元素。</li>
 </ul>
 
       
@@ -312,16 +299,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/14/2016_3_14/" rel="next" title="Hexo个人博客搭建相关资源链接">
-                <i class="fa fa-chevron-left"></i> Hexo个人博客搭建相关资源链接
+              <a href="/2016/03/16/head_first_MySQL_1_easy/" rel="next" title="Head First MySQL">
+                <i class="fa fa-chevron-left"></i> Head First MySQL
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/16/head_first_MySQL_1_easy/" rel="prev" title="Head First MySQL">
-                Head First MySQL <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/17/python3编码/" rel="prev" title="python3编码">
+                python3编码 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -436,7 +423,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简评"><span class="nav-number">1.</span> <span class="nav-text">简评</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器"><span class="nav-number">1.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成器"><span class="nav-number">2.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成器表达式"><span class="nav-number">3.</span> <span class="nav-text">生成器表达式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数式编程"><span class="nav-number"></span> <span class="nav-text">函数式编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#map和filter"><span class="nav-number">1.</span> <span class="nav-text">map和filter</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
