@@ -256,7 +256,7 @@
 </li>
 <li><p><a href="http://blog.csdn.net/never_cxb/article/details/49934003" target="_blank" rel="external">python实现爬虫统计学校BBS男女比例（一）前期准备、方案分析</a><br><a href="http://blog.csdn.net/never_cxb/article/details/49934961" target="_blank" rel="external">python实现爬虫统计学校BBS男女比例（二）多线程爬虫</a><br><a href="http://blog.csdn.net/never_cxb/article/details/49993353" target="_blank" rel="external">python实现爬虫统计学校BBS男女比例（三）数据处理</a></p>
 <ul>
-<li>Python 3.5.1 |Anaconda 2.4.1 (64-bit)环境下的<a href="/rsspyder.py">相应源码</a></li>
+<li>Python 3.5.1 |Anaconda 2.4.1 (64-bit)环境下的相应源码：<a href="/rsspyder.py">一</a><a href="/multi_thread_use_rsspyder.py">二</a></li>
 </ul>
 </li>
 </ul>
@@ -452,9 +452,11 @@
 <li>使用yield而不是return<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def counter(value):</span><br><span class="line">    print(&quot;Starting at&quot;, value)</span><br><span class="line">    while value &gt; 0:</span><br><span class="line">        yield value</span><br><span class="line">        value -= 1</span><br><span class="line">foo = counter(4) #foo为生成器对象</span><br><span class="line">for x in foo:</span><br><span class="line">    print x</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="生成器表达式"><a href="#生成器表达式" class="headerlink" title="生成器表达式"></a>生成器表达式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">foo = [x**2 for x in range(1000000)]</span><br><span class="line">bar = (x**2 for x in range(1000000))</span><br></pre></td></tr></table></figure>
-<ul>
-<li>它们将立刻返回，因为它们根本没有创建任何结果——仅当试图遍历时，才会创建结果。</li>
+<h3 id="生成器表达式"><a href="#生成器表达式" class="headerlink" title="生成器表达式"></a>生成器表达式</h3><ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">foo = [x**2 for x in range(1000000)]</span><br><span class="line">bar = (x**2 for x in range(1000000))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>它们将立刻返回，因为它们根本没有创建任何结果——仅当试图遍历时，才会创建结果。</p>
+</li>
 </ul>
 <h1 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h1><h3 id="map和filter"><a href="#map和filter" class="headerlink" title="map和filter"></a>map和filter</h3><ul>
 <li>map接收一个函数和一个可迭代对象（如列表或生成器），并返回一个列表，其中包含对可迭代对象的每个元素执行函数得到的结果。</li>
@@ -1076,7 +1078,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
