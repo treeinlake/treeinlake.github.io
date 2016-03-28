@@ -57,43 +57,22 @@
 
 
 
-<meta name="description" content="启动服务
-1$ mongod.exe --dbpath e:\data\db
-
-
-命令行交互
-1$ mongo
-
-
-创建管理员账户
-1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [">
+<meta name="description" content="启动服务1$ mongod.exe --dbpath e:\data\db
+命令行交互1$ mongo
+创建管理员账户1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [      &amp;#123;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MongoDB">
 <meta property="og:url" content="https://duckrabbit42.github.io/2016/03/28/MongoDB/index.html">
 <meta property="og:site_name" content="天空的飞鱼">
-<meta property="og:description" content="启动服务
-1$ mongod.exe --dbpath e:\data\db
-
-
-命令行交互
-1$ mongo
-
-
-创建管理员账户
-1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [">
-<meta property="og:updated_time" content="2016-03-28T10:58:09.801Z">
+<meta property="og:description" content="启动服务1$ mongod.exe --dbpath e:\data\db
+命令行交互1$ mongo
+创建管理员账户1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [      &amp;#123;">
+<meta property="og:updated_time" content="2016-03-28T11:48:20.301Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MongoDB">
-<meta name="twitter:description" content="启动服务
-1$ mongod.exe --dbpath e:\data\db
-
-
-命令行交互
-1$ mongo
-
-
-创建管理员账户
-1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [">
+<meta name="twitter:description" content="启动服务1$ mongod.exe --dbpath e:\data\db
+命令行交互1$ mongo
+创建管理员账户1234567891011121314&amp;gt; use admin&amp;gt; db.createUser( &amp;#123;    user: &amp;quot;admin&amp;quot;,    pwd: &amp;quot;admin&amp;quot;,    roles:    [      &amp;#123;">
 
 
 
@@ -270,28 +249,12 @@
       
 
       
-        <h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mongod.exe --dbpath e:\data\db</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="命令行交互"><a href="#命令行交互" class="headerlink" title="命令行交互"></a>命令行交互</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mongo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="创建管理员账户"><a href="#创建管理员账户" class="headerlink" title="创建管理员账户"></a>创建管理员账户</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt; use admin</span><br><span class="line">&gt; db.createUser(</span><br><span class="line"> &#123;</span><br><span class="line">    user: &quot;admin&quot;,</span><br><span class="line">    pwd: &quot;admin&quot;,</span><br><span class="line">    roles:</span><br><span class="line">    [</span><br><span class="line">      &#123;</span><br><span class="line">        role: &quot;userAdminAnyDatabase&quot;,</span><br><span class="line">        db: &quot;admin&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line"> &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="创建普通用户"><a href="#创建普通用户" class="headerlink" title="创建普通用户"></a>创建普通用户</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; use testDatabse</span><br><span class="line">&gt; db.createUser(</span><br><span class="line">   &#123;</span><br><span class="line">     user: &quot;zzz&quot;,</span><br><span class="line">     pwd: &quot;bendan123&quot;,</span><br><span class="line">     roles: [ &quot;readWrite&quot;, &quot;dbAdmin&quot; ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><ul>
-<li><p>查看当前操作的文档（数据库）:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- 插入数据：```db.testTable1.insert(&#123;x:10&#125;)</span><br></pre></td></tr></table></figure></p>
-</li>
-<li><p>查找与帮助：<figure class="highlight plain"><figcaption><span>```db.testTable1.help()```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### PyMongo基本用法</span><br><span class="line">- </span><br><span class="line">```python</span><br><span class="line">from pymongo import MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">client = MongoClient(&quot;mongodb://localhost:27017&quot;)</span><br><span class="line"># 连接数据库</span><br><span class="line">db = client.testDatabase</span><br><span class="line">coll = db.dataset</span><br><span class="line"># db是选择的数据库，coll是该库中的表</span><br><span class="line">coll.insert_one(&#123;&quot;name&quot;:&quot;lake&quot;,&quot;hobby&quot;:&#123;&quot;book&quot;:&quot;to be&quot;&#125;&#125;)</span><br><span class="line"># Out: &lt;pymongo.results.InsertOneResult at 0x208c82f1fc0&gt;</span><br><span class="line">result = coll.insert_one(&#123;&quot;name&quot;:&quot;tree&quot;,&quot;hobby&quot;:&#123;&quot;sport&quot;:&quot;dying&quot;&#125;&#125;)</span><br><span class="line">print(result.inserted_id)</span><br><span class="line"># Out: ObjectId(&apos;56f90c0df5fcbb0a24cf51e3&apos;)</span><br><span class="line">cursor = coll.find()</span><br><span class="line">for document in cursor:</span><br><span class="line">    print(document)</span><br><span class="line">#&#123;&apos;hobby&apos;: &#123;&apos;book&apos;: &apos;to be&apos;&#125;, &apos;_id&apos;: ObjectId(&apos;56f90b90f5fcbb0a24cf51e2&apos;), &apos;name&apos;: &apos;lake&apos;&#125;</span><br><span class="line">#&#123;&apos;hobby&apos;: &#123;&apos;sport&apos;: &apos;dying&apos;&#125;, &apos;_id&apos;: ObjectId(&apos;56f90c0df5fcbb0a24cf51e3&apos;), &apos;name&apos;: &apos;tree&apos;&#125;</span><br></pre></td></tr></table></figure></p>
-</li>
-</ul>
+        <h3 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mongod.exe --dbpath e:\data\db</span><br></pre></td></tr></table></figure>
+<h3 id="命令行交互"><a href="#命令行交互" class="headerlink" title="命令行交互"></a>命令行交互</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mongo</span><br></pre></td></tr></table></figure>
+<h3 id="创建管理员账户"><a href="#创建管理员账户" class="headerlink" title="创建管理员账户"></a>创建管理员账户</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt; use admin</span><br><span class="line">&gt; db.createUser(</span><br><span class="line"> &#123;</span><br><span class="line">    user: &quot;admin&quot;,</span><br><span class="line">    pwd: &quot;admin&quot;,</span><br><span class="line">    roles:</span><br><span class="line">    [</span><br><span class="line">      &#123;</span><br><span class="line">        role: &quot;userAdminAnyDatabase&quot;,</span><br><span class="line">        db: &quot;admin&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line"> &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="创建普通用户"><a href="#创建普通用户" class="headerlink" title="创建普通用户"></a>创建普通用户</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; use testDatabse</span><br><span class="line">&gt; db.createUser(</span><br><span class="line">   &#123;</span><br><span class="line">     user: &quot;zzz&quot;,</span><br><span class="line">     pwd: &quot;bendan123&quot;,</span><br><span class="line">     roles: [ &quot;readWrite&quot;, &quot;dbAdmin&quot; ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 查看当前操作的文档（数据库）: db</span><br><span class="line">- 插入数据: db.testTable1.insert(&#123;x:10&#125;)</span><br><span class="line">- 查找: db.testTable1.find()</span><br><span class="line">- 帮助: db.testTable1.help()</span><br></pre></td></tr></table></figure>
+<h3 id="PyMongo基本用法"><a href="#PyMongo基本用法" class="headerlink" title="PyMongo基本用法"></a>PyMongo基本用法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pymongo <span class="keyword">import</span> MongoClient</span><br><span class="line">client = MongoClient()</span><br><span class="line">client = MongoClient(<span class="string">"mongodb://localhost:27017"</span>)</span><br><span class="line"><span class="comment"># 连接数据库</span></span><br><span class="line">db = client.testDatabase</span><br><span class="line">coll = db.dataset</span><br><span class="line"><span class="comment"># db是选择的数据库，coll是该库中的表</span></span><br><span class="line">coll.insert_one(&#123;<span class="string">"name"</span>:<span class="string">"lake"</span>,<span class="string">"hobby"</span>:&#123;<span class="string">"book"</span>:<span class="string">"to be"</span>&#125;&#125;)</span><br><span class="line"><span class="comment"># Out: &lt;pymongo.results.InsertOneResult at 0x208c82f1fc0&gt;</span></span><br><span class="line">result = coll.insert_one(&#123;<span class="string">"name"</span>:<span class="string">"tree"</span>,<span class="string">"hobby"</span>:&#123;<span class="string">"sport"</span>:<span class="string">"dying"</span>&#125;&#125;)</span><br><span class="line">print(result.inserted_id)</span><br><span class="line"><span class="comment"># Out: ObjectId('56f90c0df5fcbb0a24cf51e3')</span></span><br><span class="line">cursor = coll.find()</span><br><span class="line"><span class="keyword">for</span> document <span class="keyword">in</span> cursor:</span><br><span class="line">    print(document)</span><br><span class="line"><span class="comment">#&#123;'hobby': &#123;'book': 'to be'&#125;, '_id': ObjectId('56f90b90f5fcbb0a24cf51e2'), 'name': 'lake'&#125;</span></span><br><span class="line"><span class="comment">#&#123;'hobby': &#123;'sport': 'dying'&#125;, '_id': ObjectId('56f90c0df5fcbb0a24cf51e3'), 'name': 'tree'&#125;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -433,7 +396,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">1.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行交互"><span class="nav-number">2.</span> <span class="nav-text">命令行交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建管理员账户"><span class="nav-number">3.</span> <span class="nav-text">创建管理员账户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建普通用户"><span class="nav-number">4.</span> <span class="nav-text">创建普通用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">5.</span> <span class="nav-text">基本操作</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动服务"><span class="nav-number">1.</span> <span class="nav-text">启动服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行交互"><span class="nav-number">2.</span> <span class="nav-text">命令行交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建管理员账户"><span class="nav-number">3.</span> <span class="nav-text">创建管理员账户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建普通用户"><span class="nav-number">4.</span> <span class="nav-text">创建普通用户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">5.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PyMongo基本用法"><span class="nav-number">6.</span> <span class="nav-text">PyMongo基本用法</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

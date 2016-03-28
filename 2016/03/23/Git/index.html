@@ -57,16 +57,28 @@
 
 
 
-<meta name="description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
+<meta name="description" content="恢复到最后一次提交的改动：
+1$ git checkout -- + 需要恢复的文件名
+
+但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：
+1$ git reset HEAD -- + 需要取消暂存的文件名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git">
 <meta property="og:url" content="https://duckrabbit42.github.io/2016/03/23/Git/index.html">
 <meta property="og:site_name" content="天空的飞鱼">
-<meta property="og:description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
-<meta property="og:updated_time" content="2016-03-28T11:08:26.071Z">
+<meta property="og:description" content="恢复到最后一次提交的改动：
+1$ git checkout -- + 需要恢复的文件名
+
+但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：
+1$ git reset HEAD -- + 需要取消暂存的文件名">
+<meta property="og:updated_time" content="2016-03-28T11:51:06.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git">
-<meta name="twitter:description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
+<meta name="twitter:description" content="恢复到最后一次提交的改动：
+1$ git checkout -- + 需要恢复的文件名
+
+但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：
+1$ git reset HEAD -- + 需要取消暂存的文件名">
 
 
 
@@ -244,7 +256,11 @@
 
       
         <ul>
-<li>恢复到最后一次提交的改动：<figure class="highlight plain"><figcaption><span>checkout -- + 需要恢复的文件名```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 但是，需要注意的是，如果该文件已经 add 到暂存队列中</span><br><span class="line">需要先让这个文件取消暂存：</span><br><span class="line">```git reset HEAD -- + 需要取消暂存的文件名</span><br></pre></td></tr></table></figure>
+<li><p>恢复到最后一次提交的改动：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -- + 需要恢复的文件名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>但是，需要注意的是，如果该文件已经 add 到暂存队列中<br>需要先让这个文件取消暂存：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD -- + 需要取消暂存的文件名</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
