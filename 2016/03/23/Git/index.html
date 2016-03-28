@@ -57,31 +57,16 @@
 
 
 
-<meta name="description" content="创建MySQL环境
-利用MySQL终端访问
-使用phpMyAdmin访问
-
-创建数据库和表123456$ CREATE DATABASE aliendatabase;$ USE aliendatabase;$ CREATE TABLE aliens_abduction (  name varchar(30),  how varchar(100)  );
-##向表中插入数据12$ INSERT IN">
+<meta name="description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Head First MySQL">
-<meta property="og:url" content="https://duckrabbit42.github.io/2016/03/16/head_first_MySQL_1_easy/index.html">
+<meta property="og:title" content="Git">
+<meta property="og:url" content="https://duckrabbit42.github.io/2016/03/23/Git/index.html">
 <meta property="og:site_name" content="天空的飞鱼">
-<meta property="og:description" content="创建MySQL环境
-利用MySQL终端访问
-使用phpMyAdmin访问
-
-创建数据库和表123456$ CREATE DATABASE aliendatabase;$ USE aliendatabase;$ CREATE TABLE aliens_abduction (  name varchar(30),  how varchar(100)  );
-##向表中插入数据12$ INSERT IN">
-<meta property="og:updated_time" content="2016-03-17T15:12:46.908Z">
+<meta property="og:description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
+<meta property="og:updated_time" content="2016-03-28T11:08:26.071Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Head First MySQL">
-<meta name="twitter:description" content="创建MySQL环境
-利用MySQL终端访问
-使用phpMyAdmin访问
-
-创建数据库和表123456$ CREATE DATABASE aliendatabase;$ USE aliendatabase;$ CREATE TABLE aliens_abduction (  name varchar(30),  how varchar(100)  );
-##向表中插入数据12$ INSERT IN">
+<meta name="twitter:title" content="Git">
+<meta name="twitter:description" content="恢复到最后一次提交的改动：checkout -- + 需要恢复的文件名```1234- 但是，需要注意的是，如果该文件已经 add 到暂存队列中需要先让这个文件取消暂存：```git reset HEAD -- + 需要取消暂存的文件名">
 
 
 
@@ -99,7 +84,7 @@
   };
 </script>
 
-  <title> Head First MySQL | 天空的飞鱼 </title>
+  <title> Git | 天空的飞鱼 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -219,7 +204,7 @@
             
             
               
-                Head First MySQL
+                Git
               
             
           </h1>
@@ -231,8 +216,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T19:54:38+08:00" content="2016-03-16">
-              2016-03-16
+            <time itemprop="dateCreated" datetime="2016-03-23T21:58:34+08:00" content="2016-03-23">
+              2016-03-23
             </time>
           </span>
 
@@ -258,14 +243,10 @@
       
 
       
-        <h2 id="创建MySQL环境"><a href="#创建MySQL环境" class="headerlink" title="创建MySQL环境"></a>创建MySQL环境</h2><ul>
-<li>利用MySQL终端访问</li>
-<li>使用phpMyAdmin访问</li>
+        <ul>
+<li>恢复到最后一次提交的改动：<figure class="highlight plain"><figcaption><span>checkout -- + 需要恢复的文件名```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 但是，需要注意的是，如果该文件已经 add 到暂存队列中</span><br><span class="line">需要先让这个文件取消暂存：</span><br><span class="line">```git reset HEAD -- + 需要取消暂存的文件名</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h2 id="创建数据库和表"><a href="#创建数据库和表" class="headerlink" title="创建数据库和表"></a>创建数据库和表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ CREATE DATABASE aliendatabase;</span><br><span class="line">$ USE aliendatabase;</span><br><span class="line">$ CREATE TABLE aliens_abduction (</span><br><span class="line">  name varchar(30),</span><br><span class="line">  how varchar(100)</span><br><span class="line">  );</span><br></pre></td></tr></table></figure>
-<p>##向表中插入数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ INSERT INTO aliens_abduction (name, how)</span><br><span class="line">  VALUES (&apos;john&apos;, &apos;i do know&apos;)			 #注意键值对应关系</span><br></pre></td></tr></table></figure></p>
-<p>##从表中获取数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT name FROM aliens_abduction		#获取指定列的数据</span><br><span class="line">$ SELECT * FROM aliens_abduction		   #全部获取</span><br></pre></td></tr></table></figure></p>
-<p>##筛选数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ SELECT * FROM  aliens_abduction WHERE name = &apos;john&apos; #筛选出名字为john的数据</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -283,16 +264,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/15/2016_3_15/" rel="next" title="今日书评 恋爱课-陈雪">
-                <i class="fa fa-chevron-left"></i> 今日书评 恋爱课-陈雪
+              <a href="/2016/03/23/python_Hyperlink2/" rel="next" title="近日python链接">
+                <i class="fa fa-chevron-left"></i> 近日python链接
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/17/python_note/" rel="prev" title="迭代器与生成器">
-                迭代器与生成器 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/26/2016_3_26/" rel="prev" title="今日书摘 打回原形-朱新建">
+                今日书摘 打回原形-朱新建 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -361,7 +342,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -407,7 +388,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建MySQL环境"><span class="nav-number">1.</span> <span class="nav-text">创建MySQL环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建数据库和表"><span class="nav-number">2.</span> <span class="nav-text">创建数据库和表</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
